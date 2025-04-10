@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página Web sobre Linux</title>
+  <style>
+    /* Establece estilos globales y la paleta de colores */
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #e8f5e9; /* Fondo verde claro */
+      color: #1b5e20; /* Texto en tono verde oscuro */
+    }
+    /* Contenedor principal con distribución en dos columnas */
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+    /* Menú lateral izquierdo */
+    .sidebar {
+      background-color: #a5d6a7; /* Verde medio */
+      width: 250px;
+      padding: 20px;
+      box-sizing: border-box;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .sidebar button {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      background-color: #1b5e20; /* Verde oscuro */
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .sidebar button:hover {
+      background-color: #388e3c;
+    }
+    /* Sección principal de contenido */
+    .content {
+      flex: 1;
+      padding: 40px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+    .content img {
+      max-width: 100%;
+      height: auto;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="sidebar">
+      <h2>Mis proyectos</h2>
+      <button onclick="window.location.href='usuarios.pdf'">
+        Presentación Usuarios
+      </button>
+
+      <button onclick="window.location.href='compartirlinux.pdf'">
+        Copartir carpetas en Linux
+      </button>
+
+      <button onclick="window.location.href='postinstalacion.pdf'">
+        Postinstalacion en LINUX
+      </button>
+      
+    </div>
+
+    <div class="content">
+      <h1>Bienvenido a mi página web sobre Linux</h1>
+      <p>Esta es mi pagina web en la que subire unas presentaciones sobre linux.</p>
+      <img src="linux.jpg" alt="Imagen de Linux">
+    </div>
+  </div>
+</body>
+</html>
